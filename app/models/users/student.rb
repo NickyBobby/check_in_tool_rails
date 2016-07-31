@@ -19,7 +19,7 @@ class Student < User
   end
 
   def self.lost
-    where.not(id: checked_in_ids)
+    where(at_school: true).where.not(id: checked_in_ids)
   end
 
   def self.location(name)
