@@ -27,7 +27,7 @@ gem 'will_paginate', '~> 3.1.0'
 gem 'google_calendar'
 gem 'sidekiq-cron', '~> 0.4.0'
 gem 'whenever', require: false
-gem 'redis-rails', '~> 4'
+gem 'redis-objects'
 
 group :doc do
   gem 'sdoc', '~> 0.4.0'
