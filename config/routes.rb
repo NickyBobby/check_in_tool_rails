@@ -26,6 +26,7 @@ Rails.application.routes.draw do
         end
       end
     end
+  end
 
   namespace :callbacks do
     get '/notifications', controller: 'google', action: 'watch'
