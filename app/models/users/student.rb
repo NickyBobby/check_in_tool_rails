@@ -37,8 +37,12 @@ class Student < User
   end
 
   def next_position
-    max_position = playlist_activities.maximum(:position) 
+    max_position = playlist_activities.maximum(:position)
     max_position ? max_position + 1 : 1
-  end   
+  end
+
+  def grove_name
+    grove.name
+  end
 
 end
